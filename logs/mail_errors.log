@@ -1,0 +1,6 @@
+[2025-03-23 02:58:38] Mail Error:
+Message: Invalid address:  (to): 
+Customer Email: 
+Order ID: 19
+PHPMailer Error: Invalid address:  (to): 
+----------------------------------------

@@ -1,0 +1,130 @@
+/* Reset Bootstrap container width */
+.container-fluid {
+    max-width: none !important;
+    padding: 0 !important;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2c3e50;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px 0;
+    color: white;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    margin: 0 !important; /* Added */
+    border: none !important; /* Added */
+}
+
+.logo {
+    padding: 20px 25px;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 5px 0;
+}
+
+.nav-link {
+    display: block;
+    padding: 12px 25px;
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #34495e;
+    padding-left: 30px;
+}
+
+.nav-link.active {
+    background-color: #3498db;
+    border-left: 4px solid #2980b9;
+}
+
+/* Analytics Dashboard Styles */
+.analytics-card {
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.analytics-card:hover {
+    transform: translateY(-5px);
+}
+
+.metric-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.metric-label {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 300px;
+    width: 100%;
+}
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.table-responsive {
+    margin-top: 20px;
+}
+
+/* Main Content Adjustment */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    width: calc(100% - 250px); /* Added */
+    position: relative; /* Added */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 70px;
+    }
+    
+    .logo {
+        font-size: 16px;
+        padding: 20px 10px;
+        text-align: center;
+    }
+    
+    .nav-link {
+        padding: 12px 15px;
+        text-align: center;
+    }
+    
+    .main-content {
+        margin-left: 70px;
+        width: calc(100% - 70px); /* Added */
+    }
+}
